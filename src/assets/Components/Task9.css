@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --orange: #ff6a00;
+    --dark-brown: #544844;
+    --light-gray: #efefef;
+    --light-orange: #ffc582;
+}
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.light {
+    background-color: var(--light-gray);
+}
+.dark {
+    background-color: var(--light-orange);
+}
+.container .counter-btn {
+    padding: 12px 25px;
+    margin-bottom: 20px;
+    border: 2px solid var(--orange);
+    border-radius: 50px;
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+.container .counter-btn .counter-icon {
+    margin-left: 6px;
+}
+.container .counter-num {
+    font-size: 25px;
+    color: var(--dark-brown) ;
+}
+.container .my-pop-up {
+    position: absolute;
+    top: 40px;
+    height: 100px;
+    width: 250px;
+    background-color: var(--dark-brown);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: var(--light-gray);
+}
+.container .my-pop-up .pop-up-close-btn{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
